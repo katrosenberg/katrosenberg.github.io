@@ -11,7 +11,7 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
 
-  <body onload="myMove()">
+  <body>
     <div id="header"></div>
     <nav class="teal lighten-2" role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
@@ -49,30 +49,6 @@
       <br>
       </br>
 
-    </div>
-
-    <div align="center">
-
-      <div id ="container">
-      <div id ="animate"></div>
-      </div>
-
-      <script>
-      function myMove() {
-        var elem = document.getElementById("animate");
-        var pos = 0;
-        var id = setInterval(frame, 5);
-        function frame() {
-          if (pos == 350) {
-            clearInterval(id);
-          } else {
-            pos++;
-            elem.style.top = pos + 'px';
-            elem.style.left = pos + 'px';
-          }
-        }
-      }
-      </script>
     </div>
 
 
